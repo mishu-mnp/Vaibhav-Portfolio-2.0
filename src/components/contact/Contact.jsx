@@ -2,7 +2,7 @@ import React from 'react';
 import './contact.scss';
 
 const Contact = () => {
-    return <div className='contact'>
+    return <div className='contact' id='contact'>
         <h2>Contact</h2>
     </div>;
 };
