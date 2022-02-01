@@ -1,17 +1,19 @@
 import Contact from './components/contact/Contact';
 import Experience from './components/experience/Experience';
-import Home from './components/home/Home'
-import Navbar from './components/navbar/Navbar';
 import Portfolio from './components/portfolio/Portfolio';
 import About from './components/about/About';
+import Topbar from './components/topbar/Topbar';
+import Intro from './components/intro/Intro'
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* topBar */}
+      {/* section   -about -portfolio -experience .... */}
+      <Topbar />
       <div className="sections">
-        <Home />
+        <Intro />
         <About />
         <Portfolio />
         <Experience />
