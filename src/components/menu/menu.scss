@@ -12,17 +12,27 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  // text-align: center;
   align-items: center;
   transition: all 1.2s ease;
 
   ul {
     list-style: none;
+    width: 60%;
+    color: white;
 
     li {
+      margin-bottom: 20px;
+      font-weight: 300;
+
       a {
-        color: white;
+        color: inherit;
+        font-size: 30px;
         text-decoration: none;
+      }
+
+      &:hover {
+        font-weight: 500;
       }
     }
   }
