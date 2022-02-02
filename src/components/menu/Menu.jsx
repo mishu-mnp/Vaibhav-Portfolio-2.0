@@ -7,7 +7,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
             <li><a href="#intro" onClick={() => setOpenMenu(false)}>Home</a></li>
             <li><a href="#about" onClick={() => setOpenMenu(false)}>About</a></li>
             <li><a href="#portfolio" onClick={() => setOpenMenu(false)}>Portfolio</a></li>
-            <li><a href="#experience" onClick={() => setOpenMenu(false)}>Experience</a></li>
+            <li><a href="#services" onClick={() => setOpenMenu(false)}>Services</a></li>
             <li><a href="#contact" onClick={() => setOpenMenu(false)}>Contact</a></li>
         </ul>
 

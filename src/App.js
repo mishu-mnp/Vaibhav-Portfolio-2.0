@@ -1,5 +1,5 @@
 import Contact from './components/contact/Contact';
-import Experience from './components/experience/Experience';
+import Services from './components/services/Services';
 import Portfolio from './components/portfolio/Portfolio';
 import About from './components/about/About';
 import Topbar from './components/topbar/Topbar';
@@ -23,7 +23,7 @@ function App() {
         <Intro />
         <About />
         <Portfolio />
-        <Experience />
+        <Services />
         <Contact />
       </div>
     </div>

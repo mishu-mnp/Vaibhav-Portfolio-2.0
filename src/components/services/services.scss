@@ -1,0 +1,108 @@
+.services {
+  background-color: crimson;
+  // text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .arrow {
+    position: absolute;
+    height: 50px;
+    background: transparent;
+    cursor: pointer;
+
+    &.left {
+      left: 100px;
+      transform: rotateY(180deg);
+    }
+
+    &.right {
+      right: 100px;
+    }
+  }
+
+  .slider {
+    height: 350px;
+    display: flex;
+    position: absolute;
+    left: 0;
+
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .item {
+        height: 100%;
+        width: 700px;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .left {
+          height: 80%;
+          flex: 4;
+          // background-color: yellow;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .leftContainer {
+            width: 90%;
+            height: 80%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            .imgContainer {
+              width: 90px;
+              height: 90px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              // background-color: salmon;
+              border-radius: 50%;
+
+              img {
+                width: 80px;
+              }
+            }
+
+            h2 {
+              font-size: 20px;
+            }
+            p {
+              font-size: 15px;
+            }
+            span {
+              font-size: 14px;
+              font-weight: 600;
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .right {
+          height: 100%;
+          // background-color: purple;
+          flex: 8;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+
+          img {
+            width: 500px;
+            transform: rotate(-10deg);
+            border-radius: 10%;
+          }
+        }
+      }
+    }
+  }
+}

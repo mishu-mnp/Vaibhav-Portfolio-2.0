@@ -13,7 +13,7 @@ export const skillsPortfolio = [
     },
     {
         id: 1,
-        img: 'assets/mongodb.jfif',
+        img: 'assets/database.jfif',
         title: 'Database',
         subTitle: 'MongoDB'
     }
@@ -64,5 +64,14 @@ export const projectsPortfolio = [
         id: '6',
         img: 'assets/bloog.jpeg',
         title: 'Bloog'
+    }
+]
+
+export const experiencePortfolio = [
+    {
+        id: 1,
+        img: 'assets/internship1.jfif',
+        title: 'Web Development',
+        subTitle: 'Intern at LT sw Solutions'
     }
 ]

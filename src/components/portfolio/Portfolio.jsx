@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import PortfolioList from '../portfolioList/PortfolioList';
 import './portfolio.scss';
-import { skillsPortfolio, educationPortfolio, projectsPortfolio } from '../../data';
+import {
+    skillsPortfolio,
+    educationPortfolio,
+    projectsPortfolio,
+    experiencePortfolio
+} from '../../data';
 
 const Portfolio = () => {
 
@@ -17,6 +22,10 @@ const Portfolio = () => {
         {
             id: 'projects',
             title: 'Projects'
+        },
+        {
+            id: 'experience',
+            title: 'Experience'
         }
     ];
 
@@ -30,6 +39,8 @@ const Portfolio = () => {
             case "education": setData(educationPortfolio)
                 break;
             case "projects": setData(projectsPortfolio)
+                break;
+            case "experience": setData(experiencePortfolio)
                 break;
             default: setData(skillsPortfolio)
         }
