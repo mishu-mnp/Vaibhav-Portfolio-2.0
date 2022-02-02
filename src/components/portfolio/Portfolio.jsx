@@ -1,9 +1,63 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import PortfolioList from '../portfolioList/PortfolioList';
 import './portfolio.scss';
+import { skillsPortfolio, educationPortfolio, projectsPortfolio } from '../../data';
 
 const Portfolio = () => {
+
+    const list = [
+        {
+            id: 'skills',
+            title: 'Skills'
+        },
+        {
+            id: 'education',
+            title: 'Education'
+        },
+        {
+            id: 'projects',
+            title: 'Projects'
+        }
+    ];
+
+    const [selected, setSelected] = useState("skills")
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        switch (selected) {
+            case "skills": setData(skillsPortfolio)
+                break;
+            case "education": setData(educationPortfolio)
+                break;
+            case "projects": setData(projectsPortfolio)
+                break;
+            default: setData(skillsPortfolio)
+        }
+    }, [selected])
+
+
+
     return <div className='portfolio' id='portfolio'>
-        <h2>Portfolio</h2>
+        <h1>Portfolio</h1>
+        <ul>
+            {list.map(item => (
+                <PortfolioList
+                    title={item.title}
+                    selected={selected}
+                    id={item.id}
+                    setSelected={setSelected}
+                />
+            ))}
+        </ul>
+        <div className="container">
+            {data.map(d => (
+                <div className="item" id={d.id}>
+                    <img src={d.img} alt={d.title} />
+                    <h3>{d.title}</h3>
+                    <span>{d.subTitle}</span>
+                </div>
+            ))}
+        </div>
     </div>;
 };
 
