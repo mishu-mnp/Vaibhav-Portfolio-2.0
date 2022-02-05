@@ -53,6 +53,7 @@ const Portfolio = () => {
         <ul>
             {list.map(item => (
                 <PortfolioList
+                    key={item.id}
                     title={item.title}
                     selected={selected}
                     id={item.id}
@@ -62,7 +63,7 @@ const Portfolio = () => {
         </ul>
         <div className="container">
             {data.map(d => (
-                <div className="item" id={d.id}>
+                <div className="item" id={d.id} key={d.title} >
                     <img src={d.img} alt={d.title} />
                     <h3>{d.title}</h3>
                     <span>{d.subTitle}</span>
