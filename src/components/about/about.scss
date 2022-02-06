@@ -1,4 +1,130 @@
+@import "../../global.scss";
+
 .about {
-  background-color: lightseagreen;
-  text-align: center;
+  background-color: crimson;
+  color: white;
+  display: flex;
+  // align-items: center;
+  overflow: hidden;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+      flex: 0.4;
+    }
+
+    img {
+      height: 89vh;
+
+      @include mobile {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .right {
+    flex: 0.5;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+
+    @include mobile {
+      flex: 0.6;
+    }
+
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 80%;
+      height: 80%;
+      position: relative;
+      top: 10px;
+
+      @include mobile {
+        height: 80%;
+        width: 90%;
+        justify-content: space-around;
+      }
+
+      h2 {
+        font-size: 30px;
+
+        @include mobile {
+          font-size: 25px;
+        }
+      }
+
+      p {
+        font-size: 25px;
+
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+
+      .resume-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        width: 10rem;
+        background-color: white;
+        padding: 4px;
+        border-radius: 12px;
+        cursor: pointer;
+
+        @include mobile {
+          height: 2rem;
+          width: 8rem;
+        }
+
+        a {
+          text-decoration: none;
+          color: crimson;
+          font-size: 18px;
+          font-weight: 800;
+
+          @include mobile {
+            font-size: 15px;
+          }
+
+          .d-icon {
+            font-size: 30px;
+
+            @include mobile {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+
+      .connect {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 20px;
+        a {
+          margin: 5px;
+          .connect-icon {
+            color: white;
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
 }

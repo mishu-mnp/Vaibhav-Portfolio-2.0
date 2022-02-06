@@ -18,7 +18,7 @@
       @include mobile {
         height: 80%;
         width: 100%;
-        flex: 0.5;
+        flex: 0.4;
       }
     }
   }
@@ -30,7 +30,7 @@
     align-items: center;
 
     @include mobile {
-      flex: 0.5;
+      flex: 0.6;
     }
 
     h2 {
@@ -46,7 +46,7 @@
       align-items: center;
 
       @include mobile {
-        height: 70%;
+        height: 90%;
       }
 
       input {
@@ -75,15 +75,16 @@
         background-color: crimson;
         color: white;
         width: 100px;
+        height: 35px;
         padding: 5px 8px;
         border: none;
         border-radius: 10px;
         cursor: pointer;
 
         @include mobile {
-          margin: 10px 0;
-          padding: 10px;
+          margin: 5px 0;
           font-size: 12px;
+          height: 25px;
         }
 
         &:focus {
@@ -94,6 +95,10 @@
       span {
         font-size: 15px;
         color: green;
+
+        @include mobile {
+          font-size: 12px;
+        }
       }
     }
   }
