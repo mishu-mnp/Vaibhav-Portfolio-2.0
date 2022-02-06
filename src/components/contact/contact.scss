@@ -1,13 +1,25 @@
+@import "../../global.scss";
+
 .contact {
   background-color: white;
   display: flex;
   // position: relative;
+
+  @include mobile {
+    flex-direction: column;
+  }
 
   .left {
     flex: 0.6;
     overflow: hidden;
     img {
       height: 100%;
+
+      @include mobile {
+        height: 80%;
+        width: 100%;
+        flex: 0.5;
+      }
     }
   }
   .right {
@@ -16,9 +28,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // position: absolute;
-    // top: 0;
-    // right: 10px;
+
+    @include mobile {
+      flex: 0.5;
+    }
 
     h2 {
       font-size: 30px;
@@ -31,12 +44,21 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
+
+      @include mobile {
+        height: 70%;
+      }
+
       input {
         height: 30px;
         width: 60%;
         outline: none;
         font-size: 15px;
-        padding: 0 4px;
+        padding: 4px;
+
+        @include mobile {
+          margin: 10px 0;
+        }
       }
 
       textarea {
@@ -45,7 +67,7 @@
         outline: none;
         resize: none;
         font-size: 15px;
-        padding: 0 4px;
+        padding: 4px;
       }
 
       button {
@@ -55,8 +77,14 @@
         width: 100px;
         padding: 5px 8px;
         border: none;
-        border-radius: 12px;
+        border-radius: 10px;
         cursor: pointer;
+
+        @include mobile {
+          margin: 10px 0;
+          padding: 10px;
+          font-size: 12px;
+        }
 
         &:focus {
           outline: none;

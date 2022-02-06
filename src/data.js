@@ -38,32 +38,38 @@ export const projectsPortfolio = [
     {
         id: '1',
         img: 'assets/bloog.jpeg',
-        title: 'Recipe App'
+        title: 'Recipe App',
+        url: 'https://github.com/mishu-mnp/Recipe-App'
     },
     {
         id: '2',
         img: 'assets/bloog.jpeg',
-        title: 'Currency Converter'
+        title: 'Currency Converter',
+        url: 'https://github.com/mishu-mnp/Currency-Converter'
     },
     {
         id: '3',
         img: 'assets/bloog.jpeg',
-        title: 'News App'
+        title: 'News App',
+        url: 'https://github.com/mishu-mnp/NewsApp'
     },
     {
         id: '4',
         img: 'assets/bloog.jpeg',
-        title: 'Weather App'
+        title: 'Weather App',
+        url: 'https://mishu-weather-app.herokuapp.com/'
     },
     {
         id: '5',
         img: 'assets/bloog.jpeg',
-        title: 'Watch Shop'
+        title: 'Watch Shop',
+        url: 'https://y2watch-shop.netlify.app/'
     },
     {
         id: '6',
         img: 'assets/bloog.jpeg',
-        title: 'Bloog'
+        title: 'Bloog',
+        url: 'https://github.com/mishu-mnp/Bloog'
     }
 ]
 

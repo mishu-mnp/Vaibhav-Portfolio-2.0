@@ -39,8 +39,8 @@ const Services = () => {
     return <div className='services' id='services'>
         <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
             {data.map(d => (
-                <div className="container">
-                    <div className="item" key={d.id}>
+                <div className="container" key={d.id}>
+                    <div className="item">
                         <div className="left">
                             <div className="leftContainer">
                                 <div className="imgContainer">
