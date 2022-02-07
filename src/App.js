@@ -3,7 +3,8 @@ import Services from './components/services/Services';
 import Portfolio from './components/portfolio/Portfolio';
 import About from './components/about/About';
 import Topbar from './components/topbar/Topbar';
-import Intro from './components/intro/Intro'
+import Intro from './components/intro/Intro';
+import Footer from './components/footer/Footer';
 import './app.scss';
 import { useState } from 'react';
 import Menu from './components/menu/Menu';
@@ -25,6 +26,9 @@ function App() {
         <Portfolio />
         <Services />
         <Contact />
+        <div className='footer'>
+          <Footer />
+        </div>
       </div>
     </div>
   );
