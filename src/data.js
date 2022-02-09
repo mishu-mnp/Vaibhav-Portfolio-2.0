@@ -37,31 +37,31 @@ export const educationPortfolio = [
 export const projectsPortfolio = [
     {
         id: '1',
-        img: 'assets/bloog.jpeg',
+        img: 'assets/recipe.jpeg',
         title: 'Recipe App',
         url: 'https://github.com/mishu-mnp/Recipe-App'
     },
     {
         id: '2',
-        img: 'assets/bloog.jpeg',
+        img: 'assets/currency.jpeg',
         title: 'Currency Converter',
         url: 'https://github.com/mishu-mnp/Currency-Converter'
     },
     {
         id: '3',
-        img: 'assets/bloog.jpeg',
+        img: 'assets/news.jpeg',
         title: 'News App',
         url: 'https://github.com/mishu-mnp/NewsApp'
     },
     {
         id: '4',
-        img: 'assets/bloog.jpeg',
+        img: 'assets/weather.jpeg',
         title: 'Weather App',
         url: 'https://mishu-weather-app.herokuapp.com/'
     },
     {
         id: '5',
-        img: 'assets/bloog.jpeg',
+        img: 'assets/y2watch.jpeg',
         title: 'Watch Shop',
         url: 'https://y2watch-shop.netlify.app/'
     },
