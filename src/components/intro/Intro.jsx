@@ -11,7 +11,7 @@ const Intro = () => {
             showCursor: true,
             backSpeed: 60,
             backDelay: 1500,
-            strings: ['Student', 'Frontend Developer', 'Backend Enthusiast', 'Learner']
+            strings: ['Student', 'Frontend Developer', 'Backend Developer', 'Learner']
         })
     }, [])
 
@@ -19,8 +19,7 @@ const Intro = () => {
         <div className='intro' id='intro'>
             <div className="left">
                 <div className="imgContainer">
-                    {/* <img src="assets/vaibhav_profile.jpg" alt="mishu" /> */}
-                    <img src="assets/vaibhavPhoto.jpeg" alt="mishu" />
+                    <img src="assets/vaibhav.jpeg" alt="mishu" />
                 </div>
             </div>
             <div className="right">

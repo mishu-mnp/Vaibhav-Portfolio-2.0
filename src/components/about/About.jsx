@@ -10,9 +10,9 @@ const about = () => {
         <div className="right">
             <div className="about-container">
                 <h2>About Me</h2>
-                <p>I am Frontend Developer and Backend Enthusiast, loves to code a lot and currently pursuing B.Tech in Computer Science and Engineering from Parul University.Learning daily something new related to tech and gaining skills for development.</p>
+                <p>I am a Fullstack MERN Developer, loves to code a lot and currently pursuing B.Tech in Computer Science and Engineering from Parul University.Learning daily something new related to tech and gaining skills for development.</p>
                 <div className="resume-btn">
-                    <a download href="assets/resume/Vaibhav_CV.pdf">Download CV
+                    <a download href="assets/resume/Vaibhav-Mishra-Resume.pdf">Download CV
                         <ArrowDownward className='d-icon' />
                     </a>
                 </div>

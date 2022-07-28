@@ -63,7 +63,7 @@ const Portfolio = () => {
         </ul>
         <div className="container">
             {data.map(d => (
-                <div className="item" id={d.id} key={d.title} >
+                <div className="item" id={d.id} key={d.id} >
                     <a href={d.url} target='_blank' rel="noreferrer"><img src={d.img} alt={d.title} /></a>
                     <h3>{d.title}</h3>
                     <span>{d.subTitle}</span>
